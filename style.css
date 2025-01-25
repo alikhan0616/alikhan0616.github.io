@@ -1,52 +1,81 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body {
-    background-color: #D5E68D;
-    text-align: center;
-}
-.win-Msg {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    display: none;
-}
-#draw-Msg {
-    font-size: 1.5rem;
-    display: none;
-}
-.container {
-    height: 70vh;
+.Heading {
+    height: 13vh;
+    background-color: #1F2632;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.25rem;
 }
-.game {
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;  
-    flex-wrap: wrap;
+.game-Box {
+    height: 40vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
-    
+    gap: 6rem;
 }
 .box {
-    height: 18vmin;
-    width: 18vmin;
+    height: 23vmin;
+    width: 23vmin;
     border: none;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    font-size: 10vmin;
-    background-color: #E0EDAB;
+    border-radius: 50%;
 }
-#reset-btn {
-    padding: 1rem 2rem 1rem 2rem;
-    border-radius: 1.5rem;
-    border: none;
-    font-size: 1rem;
-    background-color: #241023;
+.box:hover{
+    border: 0.35rem solid #1C1C1C;
+    cursor: pointer;
+}
+#rock {
+    background-image: url(rock.png);
+    background-size: cover;
+    background-position-x: center;
+}
+#paper {
+    background-image: url(paper.png);
+    background-size: cover;
+    background-position-x: center;
+}
+#scissor {
+    background-image: url(scissors.png);
+    background-size: cover;
+    background-position-x: center;
+}
+.score-board{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+.scores {
+    text-align: center;
+}
+.display-score{
+    font-size: 3rem;
+}
+.user {
+    font-size: 2rem;
+}
+.button-container{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-msg {
+    height: 10vmin;
+    width: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     color: white;
+    background-color: #1F2632;
+    border: none;
+    border-radius: 10px;
 }
+
