@@ -3,50 +3,70 @@
     padding: 0;
 }
 body {
-    background-color: #D5E68D;
-    text-align: center;
-}
-.win-Msg {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    display: none;
-}
-#draw-Msg {
-    font-size: 1.5rem;
-    display: none;
-}
-.container {
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    min-height: 100vh;
+    background-color: #E4E9B2;
 }
-.game {
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;  
-    flex-wrap: wrap;
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    min-height: 50vh;
+    width: 30vw;
+}
+form {
+    margin-top: 2rem;
+
+}
+form input,select,button {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}
+form input {
+    border: 1px solid lightslategrey;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+}
+form button {
+    height: 8vh;
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    background-color: #01172F;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+form button:hover {
+    cursor: pointer;
+}
+.dropdown {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.dropdown select {
+    font-size: 1rem;
+}
+i {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+.select-container img {
+    max-width: 2.5rem;
+}
+.select-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
-    
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightslategray;
+    padding: 0.25rem;
 }
-.box {
-    height: 18vmin;
-    width: 18vmin;
-    border: none;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    font-size: 10vmin;
-    background-color: #E0EDAB;
-}
-#reset-btn {
-    padding: 1rem 2rem 1rem 2rem;
-    border-radius: 1.5rem;
-    border: none;
-    font-size: 1rem;
-    background-color: #241023;
-    color: white;
+.msg-rate {
+    margin-top: 1.25rem;
 }
