@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div>
-        <h2 class="win-Msg">Winner</h2>
-        <p id="draw-Msg">Draw! Please reset.</p>
-    </div>
-    <main>
-        <h1 id="Heading">Tic Tac Toe</h1>
     <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-        </div>
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/GB/flat/64.png" alt="">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-rate">
+                1 GBP = 348 PKR
+            </div>
+            <button>Get Exchange Rate</button>
+        </form>
     </div>
-<button id="reset-btn">Reset</button>
-    </main>
-
+    <script src="codes.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
