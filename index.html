@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-        <h2 class="win-Msg">Winner</h2>
-        <p id="draw-Msg">Draw! Please reset.</p>
+<div class="card">
+    <div class="search-bar">
+        <input type="text" class="searchbar" placeholder="Enter City Name">
+        <button><img src="search.png" alt=""></button>
     </div>
-    <main>
-        <h1 id="Heading">Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+    <div class="error-msg">
+        <p>Enter Valid Country/City Name!</p>
+    </div>
+    
+    <div class="weather">
+        <img src="clear.png" class="weather-img" alt="weather icon">
+    </div>
+    <div class="temprature">
+        <h1 class="temp-value">22°C</h1>
+        <p class="city">Pakistan</p>
+    </div>
+    <div class="reports">
+        <div class="humidity report-heading">
+            <img src="humidity.png" class="report-image" alt="">
+            <div class="humidity-values report-values">
+                <p id="humidity-up" class="text-up">56%</p>
+                <p id="humidity-down" class="text-down"></p>Humidity</p>
+            </div>
+        </div>        
+        <div class="wind-speed report-heading">
+            <img src="wind.png" class="report-image" alt="">
+            <div class="wind-values report-values">
+                <p id="wind-up" class="text-up">5.66 km/h</p>
+                <p id="wind-up" class="text-down">Wind Speed</p>
+            </div>
         </div>
     </div>
-<button id="reset-btn">Reset</button>
-    </main>
+</div>
 
-    <script src="app.js"></script>
+<script src="app.js"></script>
+<body>
 </body>
 </html>
